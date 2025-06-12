@@ -21,4 +21,5 @@ jobs:
           aws-region: us-east-1
 
       - name: Subir archivos al bucket S3
-        run: aws s3 sync ./build s3://nooma-bucket --delete
+        run: aws s3 sync . s3://nooma-bucket --delete
+
